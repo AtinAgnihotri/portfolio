@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import camelize from "camelize";
 
 export const PortfolioListContainer = styled.div`
   justify-content: center;
@@ -37,29 +38,65 @@ const PortfolioDescriptionContainer = styled.div`
   margin: 2rem;
 `;
 
+// align-items: flex-start;
 const TechTagContainer = styled.div`
-  flex-direction: "row";
-  flex-wrap: "wrap";
-  flex: 1;
-  align-items: "flex-start";
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
 `;
 
 const TechTag = styled.p`
-  color: var(--bg);
+  background-color: var(--bg);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: var(--border-radius);
+  display: inline;
 `;
 
-export const PortfolioItem = ({ project }) => {
-  const { heading, image, description } = project;
+export const PortfolioItem = ({ project, isLeft }) => {
+  const {
+    heading,
+    image,
+    description,
+    technologies,
+    githubLink,
+    publicLink,
+    publicLinkCallout,
+  } = camelize(project);
+
+  const ItemImage = () => <ProjectImage src={image} />;
   return (
     <PorfolioItemContainer>
-      {image && <ProjectImage src={image} />}
+      {isLeft && image && <ProjectImage src={image} />}
       <PortfolioDescriptionContainer>
         <h2>{heading}</h2>
-        <p>{description}</p>
+        <TechTagContainer>
+          {technologies.map((tech) => (
+            <TechTag>{tech}</TechTag>
+          ))}
+        </TechTagContainer>
         <br />
-        <TechTagContainer></TechTagContainer>
-        <p>Check out the github link</p>
+        <p>{description}</p>
+
+        <p>
+          {publicLink && (
+            <>
+              {" Check it out on "}
+              <a href={publicLink} target="_blank" rel="noreferrer">
+                {publicLinkCallout}
+              </a>
+              {" and "}
+            </>
+          )}
+          {publicLink ? "c" : "C"}
+          heck out the{" "}
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            github repo
+          </a>
+          .
+        </p>
       </PortfolioDescriptionContainer>
+      {!isLeft && image && <ProjectImage src={image} />}
     </PorfolioItemContainer>
   );
 };

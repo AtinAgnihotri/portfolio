@@ -55,7 +55,7 @@ ul {
   --speed: 500ms;
 }
 
+/* text-decoration: none; */
 a {
   color: var(--text-color);
-  text-decoration: none;
 }

@@ -12,14 +12,14 @@
       "UserDefaults"
     ],
     "description": "An Expense tracking app made with SwiftUI in MVVM pattern.",
-    "github_link": "github.com/AtinAgnihotri/Overhead",
+    "github_link": "https://github.com/AtinAgnihotri/Overhead",
     "public_link": "https://testflight.apple.com/join/114vx8iC",
     "public_link_callout": "Testflight"
   },
   {
     "long_item": true,
     "heading": "Meals to Go",
-    "image": "https://github.com/AtinAgnihotri/Overhead/blob/main/ExpenseTrackingAppScreenshots/rot_light_dark.gif",
+    "image": "https://github.com/AtinAgnihotri/MealsToGoClone/raw/main/meals_to_go.png",
     "technologies": [
       "React Native",
       "React Navigation",
@@ -30,8 +30,8 @@
       "Expo Camera"
     ],
     "description": "A Zomato-esque clone made in React Native.",
-    "github_link": "github.com/AtinAgnihotri/Overhead",
-    "public_link": "https://testflight.apple.com/join/114vx8iC",
+    "github_link": "https://github.com/AtinAgnihotri/MealsToGoClone",
+    "public_link": "https://expo.dev/@atinagnihotri/MealsToGo",
     "public_link_callout": "Expo Client"
   }
 ]
