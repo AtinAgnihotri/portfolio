@@ -23,7 +23,7 @@ const PorfolioItemContainer = styled.div`
 const ProjectImage = styled.img`
   width: 16rem;
   height: 16rem;
-  object-fit: fill;
+  object-fit: cover;
   border: var(--border);
   border-radius: var(--border-radius);
   margin: 2rem;
