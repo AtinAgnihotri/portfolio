@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: var(--bg);
+  flex: 1;
 }
 
 .App-logo {
@@ -35,4 +37,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: rgb(21, 42, 58);
+  --bg-accent: rgb(12, 30, 43);
+  --text-color: rgb(244, 218, 178);
+  --nav-size: 60px;
+  --border: 2px solid rgb(124, 120, 107);
+  --border-radius: 8px;
+  --speed: 500ms;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
