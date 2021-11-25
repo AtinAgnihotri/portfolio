@@ -14,22 +14,40 @@ const NavBarList = styled.ul`
   max-width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: row;
 `;
 
 const NavBarItemContainer = styled.li`
-  width: calc(var(--nav-size) * 0.8);
-  height: calc(var(--nav-size) * 0.8);
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--bg-accent);
-  color: var(--bg-accent);
-  border-radius: 50%;
+  color: var(--text-color);
+  border-radius: var(--border-radius);
   margin: calc(var(--nav-size) * 0.1);
 `;
 
-export const NavBarItem = ({ icon }) => {
-  return <NavBarItemContainer>{icon}</NavBarItemContainer>;
+const NavBarItemTouchable = styled.a`
+  text-decoration: none;
+`;
+
+export const NavBarItem = ({ icon, text, link, onPress }) => {
+  return (
+    <NavBarItemContainer>
+      <NavBarItemTouchable
+        href={link}
+        onClick={() => {
+          if (onPress) {
+            onPress();
+          }
+        }}
+      >
+        {icon}
+        {text}
+      </NavBarItemTouchable>
+    </NavBarItemContainer>
+  );
 };
 
 export const NavBar = ({ children }) => {
