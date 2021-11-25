@@ -33,5 +33,56 @@
     "github_link": "https://github.com/AtinAgnihotri/MealsToGoClone",
     "public_link": "https://expo.dev/@atinagnihotri/MealsToGo",
     "public_link_callout": "Expo Client"
+  },
+  {
+    "long_item": false,
+    "heading": "PlantTester",
+    "image": null,
+    "technologies": [
+      "Android",
+      "Java",
+      "Espresso",
+      "Barista",
+      "MockWebServer",
+      "UIAutomator",
+      "Bitrise",
+      "Gspread",
+      "Python",
+      "Trefle API"
+    ],
+    "description": "A Dummy App to practice my testing chops. The app has a simple functionality, where on searching Name, Scientific Name or Phylum, you'll get the results back from Trefle API. The interesting part is the testing process, on every push the repo is pushed to Bitrise where it build and run Unit and UI Tests and send the reports and test artifacts through mails to stakeholders. There is also the functionality to setup Auto-Sanity at regular timeframes, or trigger testing on manually for a particular branch or commit.",
+    "github_link": "https://github.com/AtinAgnihotri/PlantTester",
+    "public_link": "https://app.bitrise.io/app/6358872685672728",
+    "public_link_callout": "Bitrise Build Page"
+  },
+  {
+    "long_item": false,
+    "heading": "Email Reports",
+    "image": null,
+    "technologies": [
+      "smtplib",
+      "ssl",
+      "importlib",
+      "MIMEText",
+      "MIMEMultipart",
+      "xml.etree",
+      "Bitrise",
+      "Gspread",
+      "Python"
+    ],
+    "description": "A python program to collate the artifacts generated during Automated UI testing during Bitrise builds, generate reports on the success or failure and relevant details regarding the same, and email them to a list of recipients based on the settings in Bitrise Workflow. This was developed for the aforementioned PlantTester Application, but with a few tweaks can be used for collating any test artifacts on any android build on Bitrise.",
+    "github_link": "https://github.com/AtinAgnihotri/EmailReports",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
+    "heading": "Step Runner",
+    "image": "https://raw.githubusercontent.com/AtinAgnihotri/StepRunner/master/Assets/Sprites/Gameplay/character_maleAdventurer_attack1.png",
+    "technologies": ["Unity", "C#", "TextMesh Pro"],
+    "description": "A vertical infinite runner that requires both and skill and luck to get good at.",
+    "github_link": "https://github.com/AtinAgnihotri/StepRunner",
+    "public_link": "https://play.google.com/store/apps/details?id=com.AtinAgnihotri.StepRunner",
+    "public_link_callout": "Google Play Store"
   }
 ]

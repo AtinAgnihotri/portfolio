@@ -23,6 +23,7 @@ const NavBarItemContainer = styled.li`
   align-items: center;
   justify-content: center;
   background-color: var(--bg-accent);
+  color: var(--bg-accent);
   border-radius: 50%;
   margin: calc(var(--nav-size) * 0.1);
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import camelize from "camelize";
+import { v4 as uuidv4 } from "uuid";
 
 export const PortfolioListContainer = styled.div`
   justify-content: center;
@@ -8,16 +9,23 @@ export const PortfolioListContainer = styled.div`
   flex-direction: column;
 `;
 
-const PorfolioItemContainer = styled.div`
+const BasePortfolioItemContainer = styled.div`
   background-color: var(--bg-accent);
   border-radius: var(--border-radius);
   align-items: flex-start;
-  justify-content: center;
   display: flex;
   flex-direction: row;
   width: 80%;
   margin: 2rem;
   padding: 2rem;
+`;
+
+const LongPorfolioItemContainer = styled(BasePortfolioItemContainer)`
+  align-items: flex-start;
+`;
+
+const ShortPorfolioItemContainer = styled(BasePortfolioItemContainer)`
+  align-items: center;
 `;
 
 const ProjectImage = styled.img`
@@ -53,50 +61,79 @@ const TechTag = styled.p`
   display: inline;
 `;
 
-export const PortfolioItem = ({ project, isLeft }) => {
+const ShortPortfolioHeading = styled.h1`
+  color: var(--text-color);
+  margin: 2rem;
+`;
+
+export const TechTagsBox = ({ technologies }) => (
+  <TechTagContainer>
+    {technologies.map((tech) => (
+      <TechTag key={uuidv4()}>{tech}</TechTag>
+    ))}
+  </TechTagContainer>
+);
+
+const ItemDescription = ({ project }) => {
   const {
     heading,
-    image,
     description,
     technologies,
     githubLink,
     publicLink,
     publicLinkCallout,
-  } = camelize(project);
-
-  const ItemImage = () => <ProjectImage src={image} />;
+    longItem,
+  } = project;
   return (
-    <PorfolioItemContainer>
-      {isLeft && image && <ProjectImage src={image} />}
-      <PortfolioDescriptionContainer>
-        <h2>{heading}</h2>
-        <TechTagContainer>
-          {technologies.map((tech) => (
-            <TechTag>{tech}</TechTag>
-          ))}
-        </TechTagContainer>
-        <br />
-        <p>{description}</p>
+    <PortfolioDescriptionContainer>
+      {longItem && <h2>{heading}</h2>}
+      <TechTagsBox technologies={technologies} />
+      <br />
+      <p>{description}</p>
 
-        <p>
-          {publicLink && (
-            <>
-              {" Check it out on "}
-              <a href={publicLink} target="_blank" rel="noreferrer">
-                {publicLinkCallout}
-              </a>
-              {" and "}
-            </>
-          )}
-          {publicLink ? "c" : "C"}
-          heck out the{" "}
-          <a href={githubLink} target="_blank" rel="noreferrer">
-            github repo
-          </a>
-          .
-        </p>
-      </PortfolioDescriptionContainer>
+      <p>
+        {publicLink && (
+          <>
+            {" Check it out on "}
+            <a href={publicLink} target="_blank" rel="noreferrer">
+              {publicLinkCallout}
+            </a>
+            {" and "}
+          </>
+        )}
+        {publicLink ? "f" : "F"}
+        ind the{" "}
+        <a href={githubLink} target="_blank" rel="noreferrer">
+          github repo
+        </a>{" "}
+        here.
+      </p>
+    </PortfolioDescriptionContainer>
+  );
+};
+
+export const PortfolioItem = ({ project, isLeft }) => {
+  const formattedProject = camelize(project);
+  const image = formattedProject.image;
+
+  return (
+    <LongPorfolioItemContainer>
+      {isLeft && image && <ProjectImage src={image} />}
+      <ItemDescription project={formattedProject} />
       {!isLeft && image && <ProjectImage src={image} />}
-    </PorfolioItemContainer>
+    </LongPorfolioItemContainer>
+  );
+};
+
+export const ShortPortfolioItem = ({ project, isLeft }) => {
+  const formattedProject = camelize(project);
+  const heading = formattedProject.heading;
+
+  return (
+    <ShortPorfolioItemContainer>
+      {isLeft && <ShortPortfolioHeading>{heading}</ShortPortfolioHeading>}
+      <ItemDescription project={formattedProject} />
+      {!isLeft && <ShortPortfolioHeading>{heading}</ShortPortfolioHeading>}
+    </ShortPorfolioItemContainer>
   );
 };

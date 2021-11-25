@@ -17,6 +17,9 @@ const PortfolioScreen = ({ projects = [] }) => {
   const hasProjects = projects.length !== 0;
   return (
     <>
+      <NavBar>
+        <p>Contact</p>
+      </NavBar>
       <ProfileSection />
       <LineBreak />
       {hasProjects && <PortfolioList projects={projects} />}
