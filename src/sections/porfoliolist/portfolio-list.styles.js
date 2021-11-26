@@ -74,7 +74,11 @@ export const TechTagsBox = ({ technologies }) => (
   </TechTagContainer>
 );
 
-const ItemDescription = ({ project }) => {
+const Description = styled.p`
+  text-align: left;
+`;
+
+const ItemDescription = ({ project, isLeft }) => {
   const {
     heading,
     description,
@@ -89,9 +93,9 @@ const ItemDescription = ({ project }) => {
       {longItem && <h2>{heading}</h2>}
       <TechTagsBox technologies={technologies} />
       <br />
-      <p>{description}</p>
+      <Description isLeft={isLeft}>{description}</Description>
 
-      <p>
+      <Description>
         {publicLink && (
           <>
             {" Check it out on "}
@@ -107,7 +111,7 @@ const ItemDescription = ({ project }) => {
           github repo
         </a>{" "}
         here.
-      </p>
+      </Description>
     </PortfolioDescriptionContainer>
   );
 };
@@ -119,7 +123,7 @@ export const PortfolioItem = ({ project, isLeft }) => {
   return (
     <LongPorfolioItemContainer>
       {isLeft && image && <ProjectImage src={image} />}
-      <ItemDescription project={formattedProject} />
+      <ItemDescription project={formattedProject} isLeft={isLeft} />
       {!isLeft && image && <ProjectImage src={image} />}
     </LongPorfolioItemContainer>
   );

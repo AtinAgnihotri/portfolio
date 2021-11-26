@@ -6,12 +6,15 @@
     "technologies": [
       "SwiftUI",
       "UIKit",
+      "Swift",
       "Core Data",
       "CloudKit",
+      "Core Graphics",
+      "Core Animation",
       "Local Notification",
       "UserDefaults"
     ],
-    "description": "An Expense tracking app made with SwiftUI in MVVM pattern.",
+    "description": "An expense tracking app with Data persistence and live data sync that helps users track their expenses but settings monthly limits, data visualisations using charts and getting helpful reminders through local notifications.",
     "github_link": "https://github.com/AtinAgnihotri/Overhead",
     "public_link": "https://testflight.apple.com/join/114vx8iC",
     "public_link_callout": "Testflight"
@@ -29,10 +32,80 @@
       "AsyncStorage",
       "Expo Camera"
     ],
-    "description": "A Zomato-esque clone made in React Native.",
+    "description": "A Zomato-esque clone made in React Native, where you can search for a city and see all the restaurants available in it, either in a list or a map view. You can go on to add them to favourites, and view favourites in a Horizontal Carousal or a favourites list in your profile section, or browse the menus available for the restaurants. The login and registration is handled through Firebase auth, and profile settings are persisted through Async Storage.",
     "github_link": "https://github.com/AtinAgnihotri/MealsToGoClone",
     "public_link": "https://expo.dev/@atinagnihotri/MealsToGo",
     "public_link_callout": "Expo Client"
+  },
+  {
+    "long_item": true,
+    "heading": "Capital Cities",
+    "image": "https://github.com/AtinAgnihotri/CapitalCities/raw/main/capitalcities.png",
+    "technologies": ["UIKIt", "MapView", "Core Location", "WebView", "Swift"],
+    "description": "A demo project to practice with MapKit. Lists out a few preselected capitals in Europe, with a variety of different views to choose from, creates a marker on their location, with special callout views that can navigate the user to an app managed web-view containing the wikipedia articles on the same.",
+    "github_link": "https://github.com/AtinAgnihotri/CapitalCities",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
+    "heading": "Bookheads",
+    "image": "https://github.com/AtinAgnihotri/Bookheads-ios/raw/main/bookheads.png",
+    "technologies": ["SwiftUI", "Core Data", "UserDefaults", "Swift"],
+    "description": "A Book rating and review app made with SwiftUI, with data modeling and persistence done through Core Data.",
+    "github_link": "https://github.com/AtinAgnihotri/Bookheads-ios",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
+    "heading": "Apple Stocks Clone",
+    "image": "https://raw.githubusercontent.com/AtinAgnihotri/AppleStocksClone/main/apple_stocks_clone.png",
+    "technologies": ["SwiftUI", "Core Animation", "URLSession", "Swift"],
+    "description": "A clone of the Apple Stocks App made with SwiftUI in MVVM Pattern.",
+    "github_link": "https://github.com/AtinAgnihotri/AppleStocksClone",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
+    "heading": "News App",
+    "image": "https://github.com/AtinAgnihotri/NewsApp/raw/main/news_app.png",
+    "technologies": ["UIKit", "NewsAPI", "URLSession", "Swift"],
+    "description": "A news app made with UIKit in MVVM pattern, that consumes the top-news endpoint of newsapi.org API",
+    "github_link": "https://github.com/AtinAgnihotri/NewsApp",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
+    "heading": "Ode To Luna",
+    "image": "https://github.com/AtinAgnihotri/Ode-to-Luna/raw/main/ode_to_luna.png",
+    "technologies": ["SwiftUI", "Swift"],
+    "description": "A commemorative to humanity's trysts with our closest celestial neighbor, Ode to Luna is a an app that lists the Apollo missions, their details and the briefs about the astronauts that went to the moon. Made with SwiftUI in MVVM Pattern.",
+    "github_link": "https://github.com/AtinAgnihotri/Ode-to-Luna",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": false,
+    "heading": "Filter it",
+    "image": null,
+    "technologies": ["UIKit", "UserDefaults", "Core Image", "Swift"],
+    "description": "An App made with UIKit and CoreImage to take an image, either by clicking it on camera or from the photo library, and applying Apple's built-in images onto the image, with user having various choices in the form of various filters, their intensities, etc.",
+    "github_link": "https://github.com/AtinAgnihotri/FilterIt",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": false,
+    "heading": "Count My Coffee",
+    "image": null,
+    "technologies": ["SwiftUI", "Swift", "CoreML", "CreateML"],
+    "description": "An iOS App that tells user when to have their last coffee for a good night's sleep based on these three questions, when do they want to wake up, roughly how many hours of sleep do they want and finally how many cups of coffee do they drink per day?",
+    "github_link": "https://github.com/AtinAgnihotri/Count-My-Coffee",
+    "public_link": null,
+    "public_link_callout": null
   },
   {
     "long_item": false,

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+// border-bottom: var(--border);
 const BaseNavBar = styled.nav`
   position: sticky;
   top: 0;
-  background-color: var(--bg);
+  background-color: var(--bg-accent);
   height: var(--nav-size);
   padding: 0 1rem;
-  border-bottom: var(--border);
 `;
 
 const NavBarList = styled.ul`
