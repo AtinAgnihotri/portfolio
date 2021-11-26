@@ -102,15 +102,18 @@ const ItemDescription = ({ project, isLeft }) => {
             <a href={publicLink} target="_blank" rel="noreferrer">
               {publicLinkCallout}
             </a>
-            {" and "}
           </>
         )}
-        {publicLink ? "f" : "F"}
-        ind the{" "}
-        <a href={githubLink} target="_blank" rel="noreferrer">
-          github repo
-        </a>{" "}
-        here.
+        {githubLink && (
+          <>
+            {publicLink ? " and f" : "F"}
+            ind the{" "}
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              github repo
+            </a>{" "}
+            here.
+          </>
+        )}
       </Description>
     </PortfolioDescriptionContainer>
   );

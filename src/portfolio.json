@@ -12,7 +12,10 @@
       "Core Graphics",
       "Core Animation",
       "Local Notification",
-      "UserDefaults"
+      "UserDefaults",
+      "IntrospectSwiftUI",
+      "Swift Package Manager",
+      "Swift"
     ],
     "description": "An expense tracking app with Data persistence and live data sync that helps users track their expenses but settings monthly limits, data visualisations using charts and getting helpful reminders through local notifications.",
     "github_link": "https://github.com/AtinAgnihotri/Overhead",
@@ -59,6 +62,32 @@
   },
   {
     "long_item": true,
+    "heading": "Meme Machine",
+    "image": "https://github.com/AtinAgnihotri/MemeMachine/raw/main/meme_machine.png",
+    "technologies": [
+      "UIKit",
+      "Core Graphics",
+      "NSAttributedStrings",
+      "Core Image",
+      "Swift"
+    ],
+    "description": "An iOS App to create 2014 boomer-esque meme on any image, that can be easily shared to any other apps. Made with UIKit and Core Graphics.",
+    "github_link": "https://github.com/AtinAgnihotri/MemeMachine",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
+    "heading": "Ape Out",
+    "image": "https://github.com/AtinAgnihotri/ApeOut/raw/main/ape_out.png",
+    "technologies": ["UIKit", "SpriteKit", "Core Graphics", "Swift"],
+    "description": "Apes with exploding banans. What could go wrong? A two-person game where the object is to make hit the player with your projectile before they hit you, amist a concrete jungle of procedurally generated and highly destructable buildings.",
+    "github_link": "https://github.com/AtinAgnihotri/ApeOut",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": true,
     "heading": "Apple Stocks Clone",
     "image": "https://raw.githubusercontent.com/AtinAgnihotri/AppleStocksClone/main/apple_stocks_clone.png",
     "technologies": ["SwiftUI", "Core Animation", "URLSession", "Swift"],
@@ -88,6 +117,53 @@
     "public_link_callout": null
   },
   {
+    "long_item": true,
+    "heading": "Shooting Gallery",
+    "image": "https://github.com/AtinAgnihotri/ShootoutGallery/raw/main/shooting_galary.gif",
+    "technologies": ["UIKit", "SpriteKit", "Swift"],
+    "description": "A shooting galary game for iPads, made in SpriteKit, where you're to shoot everything that moves . . . except the yellow duck, DON'T SHOOT THE YELLOW DUCK!!!",
+    "github_link": "https://github.com/AtinAgnihotri/ShootoutGallery",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": false,
+    "heading": "Names to Faces",
+    "image": null,
+    "technologies": [
+      "UIKit",
+      "UserDefaults",
+      "LocalAuthentication",
+      "TouchID",
+      "FaceID",
+      "Swift"
+    ],
+    "description": "A app to click an store images of people with their faces so you never have to spend another awkward conversation trying clever ways of steering clear of the name of person you're talking to, whose name you forgot. The app is secured by either Face or Touch ID depending on the iPhone device at hand.",
+    "github_link": "https://github.com/AtinAgnihotri/NamesToFaces",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": false,
+    "heading": "Swift Secrets",
+    "image": null,
+    "technologies": [
+      "UIKit",
+      "UserDefaults",
+      "LocalAuthentication",
+      "TouchID",
+      "FaceID",
+      "iOS Keychain",
+      "SwiftKeychainWrapper",
+      "Cocoapods",
+      "Swift"
+    ],
+    "description": "An app to store important and sensitive notes right in your devices keychain protected by Face/Touch Id depending on your iPhone.",
+    "github_link": "https://github.com/AtinAgnihotri/SwiftSecrets",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
     "long_item": false,
     "heading": "Filter it",
     "image": null,
@@ -104,6 +180,23 @@
     "technologies": ["SwiftUI", "Swift", "CoreML", "CreateML"],
     "description": "An iOS App that tells user when to have their last coffee for a good night's sleep based on these three questions, when do they want to wake up, roughly how many hours of sleep do they want and finally how many cups of coffee do they drink per day?",
     "github_link": "https://github.com/AtinAgnihotri/Count-My-Coffee",
+    "public_link": null,
+    "public_link_callout": null
+  },
+  {
+    "long_item": false,
+    "heading": "iOS JS Injector",
+    "image": null,
+    "technologies": [
+      "UIKit",
+      "MobileCoreServices",
+      "UserDefaults",
+      "Codable",
+      "Javascript",
+      "Swift"
+    ],
+    "description": "A sample project to add Javascript based extensions with UI's based in UIKit to Safari, by and large the most used browsers across iOS devices. In this project, we add a small Javascript console where you can add and run a javascript command, like `console.log('Hello World!')`",
+    "github_link": "https://github.com/AtinAgnihotri/iOSJSInjector",
     "public_link": null,
     "public_link_callout": null
   },
@@ -157,5 +250,27 @@
     "github_link": "https://github.com/AtinAgnihotri/StepRunner",
     "public_link": "https://play.google.com/store/apps/details?id=com.AtinAgnihotri.StepRunner",
     "public_link_callout": "Google Play Store"
+  },
+  {
+    "long_item": false,
+    "heading": "And Much More",
+    "image": null,
+    "technologies": [
+      "Swift",
+      "Javascript",
+      "Python",
+      "Java",
+      "C#",
+      "iOS",
+      "React Native",
+      "ReactJS",
+      "Android",
+      "Unity",
+      "Maya"
+    ],
+    "description": "There's a lot of other cool stuff like this, all open-sourced and freely-available",
+    "github_link": null,
+    "public_link": "https://github.com/AtinAgnihotri",
+    "public_link_callout": "My github profile."
   }
 ]
